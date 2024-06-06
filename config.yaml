@@ -82,9 +82,9 @@ bar:
   height: "28px"
   position: "top"
   opacity: 1.0
-  background: *crust #deafult: crust_tp
-  foreground: *pink #deafult: blue
-  font_family: "JetBrainsMono Nerd Font"
+  background: *crust 
+  foreground: *pink 
+  font_family: "JetBrainsMono Nerd Font" #if you don't have it installed refer to https://www.nerdfonts.com/font-downloads
   font_size: "13px"
   padding: "4px 6px"
   offset_x: "0"
@@ -100,7 +100,7 @@ bar:
       margin: "0 4px"
       padding: "0 8px"
     - type: "workspaces"
-      focused_workspace_background: *pink #deafult: blue 
+      focused_workspace_background: *pink 
       focused_workspace_foreground: *crust
 
       displayed_workspace_background: *surface0
@@ -156,7 +156,7 @@ bar:
       # How often this counter is refreshed.
       refresh_interval_ms: 1000
 
-    - type: "weather" #You have to set your longitude and latitude, you can find yours from https://www.latlong.net/ :)
+    - type: "weather" #You have to set your own longitude and latitude, you can find yours from https://www.latlong.net/ :)
       latitude: 40.6892
       longitude: 74.0445
       label: "{temperature_celsius}°C"
@@ -173,7 +173,7 @@ bar:
 
 
 
-workspaces: #simply change the name of a workspace to fit your use, if you want to ass another space please use the same format
+workspaces: # Change the name of a workspace to fit your use, if you want to add another space please use the same format
   - name: "1"
     # display_name: "󰋞"
     display_name: "Home"
